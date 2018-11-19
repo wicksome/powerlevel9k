@@ -1628,16 +1628,13 @@ prompt_vcs() {
 
 ################################################################
 # Vi Mode: show editing mode (NORMAL|INSERT)
-set_default POWERLEVEL9K_VI_INSERT_MODE_STRING "INSERT"
-set_default POWERLEVEL9K_VI_COMMAND_MODE_STRING "NORMAL"
 prompt_vi_mode() {
   case ${KEYMAP} in
     vicmd)
-      "$1_prompt_segment" "$0_NORMAL" "$2" "$DEFAULT_COLOR" "white" "$POWERLEVEL9K_VI_COMMAND_MODE_STRING"
+      "$1_prompt_segment" "$0_NORMAL" "$2" "$DEFAULT_COLOR" "white" "$(print_icon 'VI_MODE_NORMAL_ICON')"
     ;;
     main|viins|*)
-      if [[ -z $POWERLEVEL9K_VI_INSERT_MODE_STRING ]]; then return; fi
-      "$1_prompt_segment" "$0_INSERT" "$2" "$DEFAULT_COLOR" "blue" "$POWERLEVEL9K_VI_INSERT_MODE_STRING"
+      "$1_prompt_segment" "$0_INSERT" "$2" "$DEFAULT_COLOR" "blue" "$(print_icon 'VI_MODE_INSERT_ICON')"
     ;;
   esac
 }

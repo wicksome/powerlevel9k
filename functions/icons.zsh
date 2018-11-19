@@ -113,6 +113,8 @@ case $POWERLEVEL9K_MODE in
       TIME_ICON                      $'\uE12E'              # 
       JAVA_ICON                      $'\U2615'              # ☕︎
       LARAVEL_ICON                   ''
+      VI_MODE_INSERT_ICON            'INSERT'
+      VI_MODE_NORMAL_ICON            'NORMAL'
     )
   ;;
   'awesome-fontconfig')
@@ -209,6 +211,8 @@ case $POWERLEVEL9K_MODE in
       TIME_ICON                      $'\uF017 '             # 
       JAVA_ICON                      $'\U2615'              # ☕︎
       LARAVEL_ICON                   ''
+      VI_MODE_INSERT_ICON            'INSERT'
+      VI_MODE_NORMAL_ICON            'NORMAL'
     )
   ;;
   'awesome-mapped-fontconfig')
@@ -310,6 +314,8 @@ case $POWERLEVEL9K_MODE in
       TIME_ICON                      $'\uF017 '                                     # 
       JAVA_ICON                      $'\U2615'              # ☕︎
       LARAVEL_ICON                   ''
+      VI_MODE_INSERT_ICON            'INSERT'
+      VI_MODE_NORMAL_ICON            'NORMAL'
     )
   ;;
   'nerdfont-complete'|'nerdfont-fontconfig')
@@ -407,6 +413,8 @@ case $POWERLEVEL9K_MODE in
       TIME_ICON                      $'\uF017 '             # 
       JAVA_ICON                      $'\U2615'              # ☕︎
       LARAVEL_ICON                   $'\ue73f '             # 
+      VI_MODE_INSERT_ICON            'INSERT'
+      VI_MODE_NORMAL_ICON            'NORMAL'
     )
   ;;
   *)
@@ -503,6 +511,8 @@ case $POWERLEVEL9K_MODE in
       TIME_ICON                      ''
       JAVA_ICON                      $'\U2615'              # ☕︎
       LARAVEL_ICON                   ''
+      VI_MODE_INSERT_ICON            'INSERT'
+      VI_MODE_NORMAL_ICON            'NORMAL'
     )
   ;;
 esac
